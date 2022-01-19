@@ -1,7 +1,10 @@
+/* iii. Find the largest number less than N whose each digit is prime number.
+*/
+
 import java.util.Scanner;
 
 public class Main3 {
-    static boolean prime(int number) {
+    static boolean prime(int number) {  // Determines whether a digit is prime or not
         boolean flag = true;
         if (number == 2)
             return true;
@@ -13,7 +16,7 @@ public class Main3 {
         }
         return flag;
     }
-    static void check(int number) {
+    static void check(int number) {     // It extracts every digit and sends it for prime check
         while (number >= 2) {
             boolean flag = true;
             int temp = number;

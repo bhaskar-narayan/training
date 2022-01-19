@@ -1,7 +1,10 @@
+/* v. Write a program to find the smallest number divisible by all the numbers between 1 to 9
+*/
+
 public class Main5 {
     public static void main(String[] args) {
         int i = 1;
-        while (true) {
+        while (true) {                  // Logic 
             if (i % 1 == 0 &&
                     i % 2 == 0 &&
                     i % 3 == 0 &&

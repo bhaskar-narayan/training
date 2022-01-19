@@ -1,11 +1,22 @@
+/* Pattern Printing
+
+    \ * * * * * /
+    * \ * * * / *
+    * * \ * / * *
+    * * * / * * *
+    * * / * \ * *
+    * / * * * \ *
+    / * * * * * \
+
+*/
+
 import java.util.Scanner;
 
 public class Main3 {
     static void generatePattern(int input) {
         int firstPos = 1;
         int secondPos = input;
-        int midPos = (input / 2) + 1;
-        System.out.println(midPos);
+        int midPos = (input / 2) + 1;           
         for (int i = 1; i <= input; ++i) {
             if (i == midPos) {
                 for (int k = 1; k <= input; ++k) {

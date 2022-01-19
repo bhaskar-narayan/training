@@ -1,3 +1,6 @@
+/* iv. Write a function Boolean isValidURL(String url).
+*/
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -6,7 +9,7 @@ public class Main4 {
         if (url.length() < 8)
             return false;
         try {
-            if (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") {
+            if (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") {    // Handling OutOfBound exception
                 if (url.substring(0, 7) == "http://") {
                     
                 } else {
@@ -26,6 +29,6 @@ public class Main4 {
         Scanner scanner = new Scanner(System.in);
         String url = scanner.nextLine().trim();
         scanner.close();
-        System.out.println(Pattern.matches("https?[:]//\\w*.\\w*", url));
+        System.out.println(Pattern.matches("https?[:]//\\w*.\\w*", url));   // Regex
     }
 }

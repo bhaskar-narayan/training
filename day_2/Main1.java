@@ -1,10 +1,12 @@
-// i)Write a program to remove duplicate values from an array and returns an array of unique values. int[] removeDuplicates(int[]values)
+/* i)Write a program to remove duplicate values from an array 
+and returns an array of unique values. int[] removeDuplicates(int[]values)
+*/
 
 import java.util.Scanner;
 
 
 public class Main1 {
-    static int[] removeDuplicates(int[] values) {   // method where duplicates are removed
+    static int[] removeDuplicates(int[] values) {   // Method where duplicates are removed
         int finalArray[] = new int[6];
         int idx = 0;
         for (int i = 0; i < 6; ++i) {
@@ -14,7 +16,7 @@ public class Main1 {
                 if (temp == values[j]) {
                     ++count;
                     if (count > 1)
-                        values[j] = -999;
+                        values[j] = -999;           
                 }
             }
         }
@@ -30,11 +32,11 @@ public class Main1 {
         int initalArray[] = new int[6];
         System.out.println("Enter your values one by one");
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 6; ++i) 
+        for (int i = 0; i < 6; ++i)     // Array initialization
             initalArray[i] = scanner.nextInt();
         scanner.close();
         int finalArray[] = removeDuplicates(initalArray);
-        for (int i = 0; i < finalArray.length; ++i) {
+        for (int i = 0; i < finalArray.length; ++i) {   // Final array printing on console
             if (finalArray[i] != 0)
                 System.out.print(finalArray[i] + " ");
         }    
