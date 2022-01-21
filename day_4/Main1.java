@@ -19,7 +19,6 @@ static String reverseVowels(String str)
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class Main1 {
     static int countChar(String str, char ch) {
         int counter = 0;
@@ -129,7 +128,7 @@ public class Main1 {
                 vowels = vowels + str.charAt(i);
             }
         }
-        for (int i = vowels.length() - 1; i  >= 0; --i) {
+        for (int i = vowels.length() - 1; i >= 0; --i) {
             reversedVowels = reversedVowels + vowels.charAt(i);
         }
         for (int i = 0; i < length; ++i) {
@@ -164,41 +163,41 @@ public class Main1 {
         inputString = scanner.nextLine().trim();
         StringBuilder sBuilder = new StringBuilder();
         sBuilder.append(inputString);
-        // System.out.println("Enter your occurence character");
-        // occurrenceCharacter = scanner.nextLine().charAt(0);
-        // System.out.println(countChar(inputString, occurrenceCharacter));
-        // System.out.println("Enter your start index");
-        // startIndex = scanner.nextInt();
-        // System.out.println("Enter your end index");
-        // endIndex = scanner.nextInt();
-        // if (startIndex < 0 ||
-        // startIndex > inputString.length() - 1 ||
-        // endIndex < startIndex ||
-        // endIndex > inputString.length() - 1) {
-        // System.out.println("Wrong input");
-        // System.exit(1);
-        // }
-        // System.out.println("Your substring is: " + substring(inputString, startIndex,
-        // endIndex));
-        // System.out.println("Enter your split character");
-        // splitCharacter = scanner.next().charAt(0);
-        // splitArray = split(inputString, splitCharacter);
-        // for (int i = 0; i < splitArray.length; ++i) {
-        // try {
-        // if (!splitArray[i].isEmpty() || splitArray[i] != null)
-        // System.out.print(splitArray[i]);
-        // } catch (Exception e) {
-        // }
-        // }
-        // System.out.print("\n");
+        System.out.println("Enter your occurence character");
+        occurrenceCharacter = scanner.nextLine().charAt(0);
+        System.out.println(countChar(inputString, occurrenceCharacter));
+        System.out.println("Enter your start index");
+        startIndex = scanner.nextInt();
+        System.out.println("Enter your end index");
+        endIndex = scanner.nextInt();
+        if (startIndex < 0 ||
+                startIndex > inputString.length() - 1 ||
+                endIndex < startIndex ||
+                endIndex > inputString.length() - 1) {
+            System.out.println("Wrong input");
+            System.exit(1);
+        }
+        System.out.println("Your substring is: " + substring(inputString, startIndex,
+                endIndex));
+        System.out.println("Enter your split character");
+        splitCharacter = scanner.next().charAt(0);
+        splitArray = split(inputString, splitCharacter);
+        for (int i = 0; i < splitArray.length; ++i) {
+            try {
+                if (!splitArray[i].isEmpty() || splitArray[i] != null)
+                    System.out.print(splitArray[i]);
+            } catch (Exception e) {
+            }
+        }
+        System.out.print("\n");
         System.out.println("Enter you pattern");
         patternString = scanner.next().trim();
         System.out.println(hasPattern(inputString, patternString));
-        // System.out.println("Enter your word character");
-        // wordCharacter = scanner.next().charAt(0);
-        // scanner.close();
-        // System.out.println(allWordsContainsChar(inputString, wordCharacter));
-        // System.out.println("Reversed string is: " + reverse(sBuilder));
-        // System.out.println("Vowel reversed string: " + reverseVowels(inputString));
+        System.out.println("Enter your word character");
+        wordCharacter = scanner.next().charAt(0);
+        scanner.close();
+        System.out.println(allWordsContainsChar(inputString, wordCharacter));
+        System.out.println("Reversed string is: " + reverse(sBuilder));
+        System.out.println("Vowel reversed string: " + reverseVowels(inputString));
     }
 }
