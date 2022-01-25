@@ -18,33 +18,37 @@ public class Address {
 }
 -----------------------------------------------------------------------------------------------------------------
 
-employee: {
-    "name": "Bhaskar Narayan",
-    "salary": 5001,
-    "married": false;
-    "grade": null,
-    address: {
-        "primaryAddress": "Cooch Behar, West Bengal",
-        "secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
-        "country": "India",
-        "state": "West Bengal",
-    },
-    "mobileNumbers": [
-        "+917596949008",
-        "+917001618081",
-    ],
-    address: {
-        "primaryAddress": "Cooch Behar, West Bengal",
-        "secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
-        "country": "India",
-        "state": "West Bengal",
-    }
+{
+	"employee": {
+		"name": "Bhaskar Narayan",
+		"salary": 5001,
+		"married": false,
+		"grade": null,
+		"address": {
+			"primaryAddress": "Cooch Behar, West Bengal",
+			"secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
+			"country": "India",
+			"state": "West Bengal"
+		},
+		"mobileNumbers": [
+			"+917596949008",
+			"+917001618081"
+		],
+		"address": {
+			"primaryAddress": "Cooch Behar, West Bengal",
+			"secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
+			"country": "India",
+			"state": "West Bengal"
+		}
+	}
 }
 
-address: {
-    "primaryAddress": "Cooch Behar, West Bengal",
-    "secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
-    "country": "India",
-    "state": "West Bengal"
+{
+	"address": {
+		"primaryAddress": "Cooch Behar, West Bengal",
+		"secondaryAddress": "Noida, Sector-22, Uttar Pradesh",
+		"country": "India",
+		"state": "West Bengal"
+	}
 }
 
