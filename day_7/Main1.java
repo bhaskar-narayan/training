@@ -85,6 +85,7 @@ class Contact {
         }
     }
     void viewMyPost() {                                     // show personal status
+        
         System.out.println(image.value);
         System.out.println(video.value);
         System.out.println(text.value);
@@ -122,7 +123,7 @@ class Contact {
     }
 }
 
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
         Contact contact = new Contact();
         contact.createUser("Bhaskar Narayan", 7596949008L);
